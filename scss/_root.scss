@@ -1,0 +1,40 @@
+:root {
+  --black: #161617;
+  --primary: #0072F5;
+  --secondary: #86868B;
+
+  --index: calc(1vh + 1vw);
+
+  --fs_main-title-text: 142px;
+  --fs_title-text: 56px;
+  --fs_text: 14px;
+
+  --fs_menu-link: 18px;
+
+  --fs_subtitle-text: 20px;
+  --fs_subhead-text: 32px;
+
+  --sidebar-page: 360px;
+}
+
+
+@media (max-width: 1200px) {
+  :root {
+    --fs_main-title-text: 120px;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    --fs_main-title-text: calc(var(--index) * 5);
+    --fs_title-text: 46px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --fs_title-text: 32px;
+    --fs_subtitle-text: 16px;
+    --fs_subhead-text: 24px;
+  }
+}

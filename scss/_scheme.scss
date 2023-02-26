@@ -1,0 +1,32 @@
+.scheme {
+
+
+  width: 100%;
+  padding: 0 15px;
+
+
+  &__container {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+.schemes {
+
+  iframe {
+    border: 1px solid var(--secondary);
+    width: 100%;
+    height: calc(var(--index) * 30)
+  }
+}
+
+@media (max-width: 576px) {
+  .schemes {
+
+    iframe {
+      border: 1px solid var(--secondary);
+      width: 100%;
+      height: calc(var(--index) * 40)
+    }
+  }
+}

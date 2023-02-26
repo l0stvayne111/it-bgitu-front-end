@@ -1,0 +1,14 @@
+.disciplined {
+  &__items {
+    margin-top: 125px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .disciplined {
+    &__items {
+      margin-top: 75px;
+    }
+  }
+}
