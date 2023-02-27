@@ -1,12 +1,11 @@
+
+
+
 window.addEventListener("load", function (event) {
     let lazyScroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
     });
-
-
-
-
 
     let preloader = document.querySelector(".preloader");
 
