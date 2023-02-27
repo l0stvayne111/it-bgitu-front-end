@@ -1,11 +1,15 @@
 
 
 
-window.addEventListener("load", function (event) {
-    let lazyScroll = new LocomotiveScroll({
-        el: document.querySelector('[data-scroll-container]'),
+document.addEventListener("DOMContentLoaded", function (event) {
+    let locoScroll;
+    locoScroll = new LocomotiveScroll({
+        el: document.querySelector("[data-scroll-container]"),
         smooth: true,
     });
+    new ResizeObserver(() => locoScroll.update()).observe(
+        document.querySelector("[data-scroll-container]")
+    );
 
     let preloader = document.querySelector(".preloader");
 
@@ -15,7 +19,7 @@ window.addEventListener("load", function (event) {
     let menu = document.querySelector('.menu');
     let scrollPos = 0;
 
-    lazyScroll.on("scroll", (args) => {
+    locoScroll.on("scroll", (args) => {
         let progress = args.scroll.y;
         if (progress >= 150) {
             if (progress > scrollPos && !Boolean(+menu.getAttribute('data-nav-open'))) {
@@ -37,6 +41,8 @@ window.addEventListener("load", function (event) {
     }
 
 });
+
+
 
 class Accordion {
     constructor() {
