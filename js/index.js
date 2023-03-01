@@ -1,6 +1,3 @@
-
-
-
 document.addEventListener("DOMContentLoaded", function (event) {
     let locoScroll;
     locoScroll = new LocomotiveScroll({
@@ -41,8 +38,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
 });
-
-
 
 class Accordion {
     constructor() {
