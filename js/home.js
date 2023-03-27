@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
         document.querySelector("[data-scroll-container]")
     );
 
-    //let preloader = document.querySelector(".preloader");
+    let preloader = document.querySelector(".preloader");
 
-    //preloader.style.opacity = 0;
+    preloader.style.opacity = 0;
 
 
     let menu = document.querySelector('.menu');
@@ -30,12 +30,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
         scrollPos = progress;
     })
 
-    // let timer = setTimeout(() => {
-    //     preloader.remove();
-    // }, 450);
-    // return () => {
-    //     clearTimeout(timer);
-    // }
+    let timer = setTimeout(() => {
+        preloader.remove();
+    }, 450);
+    return () => {
+        clearTimeout(timer);
+    }
 
 });
 
