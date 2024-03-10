@@ -1,0 +1,41 @@
+.Image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  --base-ease: cubic-bezier(0.25, 0.46, 0.45, 0.84);
+  --base-duration: 600ms;
+  --d: 50;
+  --x: 0;
+  --y: 0;
+  transition: transform calc(var(--base-duration) / 4) var(--base-ease);
+  @media (hover: hover) {
+    &:hover {
+      transform: scale(1.025) translate(calc(var(--x) / var(--d) * 1px), calc(var(--y) / var(--d) * 1px));
+    }
+  }
+  img {
+    position: absolute;
+    --d: 20;
+    transform: translate(calc(var(--x) / var(--d) * 1px), calc(var(--y) / var(--d) * 1px)) !important;
+    height: 120%;
+    left: -10%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    //opacity: 0;
+    pointer-events: none;
+    top: -10%;
+    transition: opacity var(--base-duration) var(--base-ease), transform var(--base-duration) var(--base-ease);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 120%;
+
+    display: inline-block;
+
+    z-index: 1;
+  }
+}

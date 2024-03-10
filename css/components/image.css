@@ -1,0 +1,46 @@
+.Image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  --base-ease: cubic-bezier(0.25, 0.46, 0.45, 0.84);
+  --base-duration: 600ms;
+  --d: 50;
+  --x: 0;
+  --y: 0;
+  -webkit-transition: -webkit-transform calc(var(--base-duration) / 4) var(--base-ease);
+  transition: -webkit-transform calc(var(--base-duration) / 4) var(--base-ease);
+  transition: transform calc(var(--base-duration) / 4) var(--base-ease);
+  transition: transform calc(var(--base-duration) / 4) var(--base-ease), -webkit-transform calc(var(--base-duration) / 4) var(--base-ease);
+}
+@media (hover: hover) {
+  .Image:hover {
+    -webkit-transform: scale(1.025) translate(calc(var(--x) / var(--d) * 1px), calc(var(--y) / var(--d) * 1px));
+            transform: scale(1.025) translate(calc(var(--x) / var(--d) * 1px), calc(var(--y) / var(--d) * 1px));
+  }
+}
+.Image img {
+  position: absolute;
+  --d: 20;
+  -webkit-transform: translate(calc(var(--x) / var(--d) * 1px), calc(var(--y) / var(--d) * 1px)) !important;
+          transform: translate(calc(var(--x) / var(--d) * 1px), calc(var(--y) / var(--d) * 1px)) !important;
+  height: 120%;
+  left: -10%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  pointer-events: none;
+  top: -10%;
+  -webkit-transition: opacity var(--base-duration) var(--base-ease), -webkit-transform var(--base-duration) var(--base-ease);
+  transition: opacity var(--base-duration) var(--base-ease), -webkit-transform var(--base-duration) var(--base-ease);
+  transition: opacity var(--base-duration) var(--base-ease), transform var(--base-duration) var(--base-ease);
+  transition: opacity var(--base-duration) var(--base-ease), transform var(--base-duration) var(--base-ease), -webkit-transform var(--base-duration) var(--base-ease);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 120%;
+  display: inline-block;
+  z-index: 1;
+}

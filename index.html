@@ -6,6 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/fancybox.css">
+    <link
+            rel="stylesheet"
+            href="css/swiper-bundle.min.css"
+    />
     <link href="css/locomotive-scroll.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/index.min.css">
@@ -106,35 +110,425 @@
 
 
     <header data-scroll-section class="header">
-        <div class="container position-relative d-none d-lg-block">
-            <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" class="header__title">
-                Поступай<br/>
-                на IT в БГИТУ
-            </div>
-            <div data-scroll data-scroll-speed="-1" class="header__description Text text-secondary align-right">
-                IT в БГИТУ – это образовательный<br/>
-                и карьерный трек для обучающихся с <br/>
-                последующим трудоустройством в IT компаниях <br/>
-                Брянской области
-            </div>
+        <div data-scroll data-scroll-speed="1.5" class="header__banner">
+            <img src="/img/banners/main.jpg" alt="">
         </div>
-        <div class="d-lg-none container">
-            <div class="header__title">
-                Поступай<br/>
-                на IT в БГИТУ
+        <div class="container row position-relative header__in">
+            <div class="col-12 d-flex flex-column justify-content-between">
+                <div data-scroll-direction="horizontal" data-scroll data-scroll-speed="-1.5" class="Title text-uppercase">
+                    Лучшая ИТ <br/>
+                    подготовка в<br/>
+                    Брянской области
+                </div>
+                <div data-scroll data-scroll-speed="-1">
+                    <div class="Subhead">
+                        Поступай на IT в БГИТУ
+                    </div>
+                    <p class="Subtitle text-secondary mt-4">
+                        IT в БГИТУ – это образовательный <br/>
+                        и карьерный трек для обучающихся с <br/>
+                        последующим трудоустройством в IT компаниях <br/>
+                        Брянской области
+                    </p>
+                </div>
             </div>
-            <div class="Text mt-3">
-                IT в БГИТУ – это образовательный и карьерный трек для обучающихся с последующим трудоустройством в IT
-                компаниях Брянской области
-            </div>
-        </div>
-        <div data-scroll data-scroll-speed="2" class="header__banner mt-5">
-            <picture>
-                <source srcset="img/banners/main-banner.webp" type="image/webp">
-                <img src="img/banners/main-banner.jpg" alt="">
-            </picture>
         </div>
     </header>
+
+
+    <section data-scroll-section class="section event-section">
+        <div class="container">
+            <div class="row gy-4 justify-content-between">
+                <div class="col-md-4 ">
+                    <div class="Subtitle">
+                        Почему мы лучшая ИТ подготовка в Брянской области
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div data-scroll data-scroll-speed="0.5" class="Subhead text-bold">
+                        Сборная Брянской области по спортивному программированию
+                        состоит из обучающихся бакалавриата и магистратуры БГИТУ
+                    </div>
+                </div>
+            </div>
+            <div class="swiper mt-5 event-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide event-slider-slide">
+                        <div class="Image event-slider-item">
+                            <img src="/img/sport_progr/Sport_progr_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide event-slider-slide">
+                        <div class="Image event-slider-item">
+                            <img src="/img/sport_progr/Sport_progr_2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide event-slider-slide">
+                        <div class="Image event-slider-item">
+                            <img src="/img/sport_progr/Sport_progr_3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide event-slider-slide">
+                        <div class="Image event-slider-item">
+                            <img src="/img/sport_progr/Sport_progr_4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide event-slider-slide">
+                        <div class="Image event-slider-item">
+                            <img src="/img/sport_progr/Sport_progr_5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-md-5 col-md-7">
+                    <div data-scroll data-scroll-speed="0.5" class="mt-5">
+                        <div class="Subtitle text-bold">
+                            В дисциплине «Продуктовое программирование» в составе команды, которая представляет нашу
+                            Брянщину сборная команда <a href="">#it_bgitu</a>:
+                        </div>
+                        <div class="mt-3">
+                            <div class="row g-3">
+                                <div class="col-lg-6">
+                                    <div class="Avatar">
+                                        <div class="d-flex align-items-center">
+                                            <div class="Avatar-user">
+                                                <img src="https://i.pravatar.cc/150?u=a04258114e29026708c" alt="">
+                                            </div>
+                                            <div class="d-flex flex-column ms-2">
+                                                <a href="" class="Text">Максим Поленок</a>
+                                                <div class="Footnote">
+                                                    Java-разработчик
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="Avatar">
+                                        <div class="d-flex align-items-center">
+                                            <div class="Avatar-user">
+                                                <img src="https://i.pravatar.cc/150?u=a04258114e29026708c" alt="">
+                                            </div>
+                                            <div class="d-flex flex-column ms-2">
+                                                <a href="" class="Text">Дмитрий Мурашко</a>
+                                                <div class="Footnote">
+                                                    Java-разработчик
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="Avatar">
+                                        <div class="d-flex align-items-center">
+                                            <div class="Avatar-user">
+                                                <img src="https://i.pravatar.cc/150?u=a04258114e29026708c" alt="">
+                                            </div>
+                                            <div class="d-flex flex-column ms-2">
+                                                <a href="" class="Text">Никита Шидловский</a>
+                                                <div class="Footnote">
+                                                    Java-разработчик
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="Avatar">
+                                        <div class="d-flex align-items-center">
+                                            <div class="Avatar-user">
+                                                <img src="https://i.pravatar.cc/150?u=a04258114e29026708c" alt="">
+                                            </div>
+                                            <div class="d-flex flex-column ms-2">
+                                                <a href="" class="Text">Арина Прокопенко</a>
+                                                <div class="Footnote">
+                                                    Java-разработчик
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="Avatar">
+                                        <div class="d-flex align-items-center">
+                                            <div class="Avatar-user">
+                                                <img src="https://i.pravatar.cc/150?u=a04258114e29026708c" alt="">
+                                            </div>
+                                            <div class="d-flex flex-column ms-2">
+                                                <a href="" class="Text">Владислав Илларионов</a>
+                                                <div class="Footnote">
+                                                    Java-разработчик
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-scroll data-scroll-speed="0.5" class="mt-5">
+                        <div class="Subtitle text-bold">
+                            Достижения команды
+                        </div>
+                        <p class="Text text-secondary mt-3">
+                            команда Брянской области вошла в ТОП-10 команд Международного фестиваля по спортивному
+                            программированию «Код Мира» в 2023 г., поделив 7-е место с Самарской областью.
+                        </p>
+                    </div>
+                    <div data-scroll data-scroll-speed="0.5" class="mt-5">
+                        <div class="Subtitle text-bold">
+                            Тренер спортсменов
+                        </div>
+                        <p class="Text text-secondary mt-3">
+                            проректор по цифровизации, зав. кафедрой «Информационные технологии»
+                            в БГИТУ
+                        </p>
+                        <div class="Avatar mt-3">
+                            <div class="d-flex align-items-center">
+                                <div class="Avatar-user">
+                                    <img src="https://i.pravatar.cc/150?u=a04258114e29026708c" alt="">
+                                </div>
+                                <div class="d-flex flex-column ms-2">
+                                    <a href="" class="Text">Олег Казаков</a>
+                                    <div class="Footnote">
+                                        Тренер спортсменов
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-scroll data-scroll-speed="0.5" class="mt-5">
+                        <div class="Subtitle text-bold">
+                            Представитель команды
+                        </div>
+                        <div class="Avatar mt-3">
+                            <div class="d-flex align-items-center">
+                                <div class="Avatar-user">
+                                    <img src="https://i.pravatar.cc/150?u=a04258114e29026708c" alt="">
+                                </div>
+                                <div class="d-flex flex-column ms-2">
+                                    <a href="" class="Text">Сергей Новиков</a>
+                                    <div class="Footnote">
+                                        Представитель команды
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-scroll-section class="section event-section">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6">
+                    <div data-scroll data-scroll-speed="0.5" class="Subhead text-bold">
+                        Студенты БГИТУ являются победителями и участниками конкурсных проектов
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div data-scroll data-scroll-speed="0.75" class="Subtitle">
+                        Министерства науки и высшего образования РФ, Министерства просвещения РФ, Федерального
+                        агентства по делам молодёжи (Росмолодёжь. Гранты) и др.
+                    </div>
+                </div>
+            </div>
+            <div class="swiper mt-5 event-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide event-slider-slide">
+                        <div class="Image event-slider-item">
+                            <img src="/img/student_it/Student_it_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide event-slider-slide">
+                        <div class="Image event-slider-item">
+                            <img src="/img/student_it/Student_it_2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide event-slider-slide">
+                        <div class="Image event-slider-item">
+                            <img src="/img/student_it/Student_it_3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide event-slider-slide">
+                        <div class="Image event-slider-item">
+                            <img src="/img/student_it/Student_it_4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-md-5 col-md-7">
+                    <div data-scroll data-scroll-speed="0.5" class="mt-5">
+                        <div class="Subtitle text-bold">
+                            в тройке сильнейших в номинации «Программист» Российской национальной премии «Студент года.
+                            IT» и
+                            представляющий БГИТУ на Всемирном фестивале Молодежи-2024 в Сочи!
+                        </div>
+                        <div class="mt-3 Text">
+                            <div class="Avatar">
+                                <div class="d-flex align-items-center">
+                                    <div class="Avatar-user">
+                                        <img src="https://i.pravatar.cc/150?u=a04258114e29026708c" alt="">
+                                    </div>
+                                    <div class="d-flex flex-column ms-2">
+                                        <a href="" class="Text">Никита Шидловский</a>
+                                        <div class="Footnote">
+                                            Студент <a>it_bgitu</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-scroll-section class="section event-section">
+        <div class="container">
+            <div class="Title">
+                Практика в <span class="text-primary">ИТ-кампаниях</span> и
+                <span class="text-primary">трудоустройство</span>
+                студентов в период обучения в вузе
+            </div>
+            <div class="swiper mt-5 event-slider team-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="team-item">
+                            <div class="team-item-img">
+                                <img src="img/team/card-7.jpg" alt="">
+                            </div>
+                            <div class="team-title">
+                                Бондаренко Сергей Владимирович
+                            </div>
+                            <div class="team-subtitle">
+                                Специалист АО «КОНСИСТ-ОС»
+                            </div>
+                            <ul class="team-list">
+                                <li class="team-subtitle">
+                                    Преподаваемые дисциплины:
+                                </li>
+                                <li>
+                                    Frontend-разработка
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team-item">
+                            <div class="team-item-img">
+                                <img src="img/team/card-7.jpg" alt="">
+                            </div>
+                            <div class="team-title">
+                                Бондаренко Сергей Владимирович
+                            </div>
+                            <div class="team-subtitle">
+                                Специалист АО «КОНСИСТ-ОС»
+                            </div>
+                            <ul class="team-list">
+                                <li class="team-subtitle">
+                                    Преподаваемые дисциплины:
+                                </li>
+                                <li>
+                                    Frontend-разработка
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team-item">
+                            <div class="team-item-img">
+                                <img src="img/team/card-7.jpg" alt="">
+                            </div>
+                            <div class="team-title">
+                                Бондаренко Сергей Владимирович
+                            </div>
+                            <div class="team-subtitle">
+                                Специалист АО «КОНСИСТ-ОС»
+                            </div>
+                            <ul class="team-list">
+                                <li class="team-subtitle">
+                                    Преподаваемые дисциплины:
+                                </li>
+                                <li>
+                                    Frontend-разработка
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team-item">
+                            <div class="team-item-img">
+                                <img src="img/team/card-7.jpg" alt="">
+                            </div>
+                            <div class="team-title">
+                                Бондаренко Сергей Владимирович
+                            </div>
+                            <div class="team-subtitle">
+                                Специалист АО «КОНСИСТ-ОС»
+                            </div>
+                            <ul class="team-list">
+                                <li class="team-subtitle">
+                                    Преподаваемые дисциплины:
+                                </li>
+                                <li>
+                                    Frontend-разработка
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team-item">
+                            <div class="team-item-img">
+                                <img src="img/team/card-7.jpg" alt="">
+                            </div>
+                            <div class="team-title">
+                                Бондаренко Сергей Владимирович
+                            </div>
+                            <div class="team-subtitle">
+                                Специалист АО «КОНСИСТ-ОС»
+                            </div>
+                            <ul class="team-list">
+                                <li class="team-subtitle">
+                                    Преподаваемые дисциплины:
+                                </li>
+                                <li>
+                                    Frontend-разработка
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team-item">
+                            <div class="team-item-img">
+                                <img src="img/team/card-7.jpg" alt="">
+                            </div>
+                            <div class="team-title">
+                                Бондаренко Сергей Владимирович
+                            </div>
+                            <div class="team-subtitle">
+                                Специалист АО «КОНСИСТ-ОС»
+                            </div>
+                            <ul class="team-list">
+                                <li class="team-subtitle">
+                                    Преподаваемые дисциплины:
+                                </li>
+                                <li>
+                                    Frontend-разработка
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="np" data-scroll-section class="section directions">
         <div class="container">
             <div class="Title mb-4 text-black directions__title">
@@ -1887,155 +2281,278 @@
             <div class="Title">
                 Занятия ведут представители IT-индустрии
             </div>
-            <div class="row team gx-2 gy-3 gx-md-4 gy-md-5">
-                <div class="col-6 col-lg-4">
-                    <div class="team-item">
-                        <div class="team-item-img">
-                            <img src="img/team/compressor/card-1-min.jpg" alt="">
+            <div class="swiper mt-5 event-slider team-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="team-item">
+                            <div class="team-item-img">
+                                <img src="img/team/compressor/card-1-min.jpg" alt="">
+                            </div>
+                            <div class="team-title">
+                                Протасов Павел Николаевич
+                            </div>
+                            <div class="team-subtitle">
+                                Директор ООО «СОФТСОЛ»
+                            </div>
+                            <ul class="team-list">
+                                <li class="team-subtitle">
+                                    Преподаваемые дисциплины:
+                                </li>
+                                <li>
+                                    Разработка приложений в среде Java
+                                </li>
+                                <li>
+                                    Язык программирования Java
+                                </li>
+                                <li>
+                                    Объектно-ориентированное программирование
+                                </li>
+                            </ul>
                         </div>
-                        <div class="team-title">
-                            Протасов Павел Николаевич
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team-item">
+                            <div class="team-item-img">
+                                <img src="img/team/compressor/card-2-min.jpg" alt="">
+                            </div>
+                            <div class="team-title">
+                                Кондратенко Сергей Викторович
+                            </div>
+                            <div class="team-subtitle">
+                                Директор ООО «НООСОФТ»
+                            </div>
+                            <ul class="team-list">
+                                <li class="team-subtitle">
+                                    Преподаваемые дисциплины:
+                                </li>
+                                <li>
+                                    JavaScript-разработка
+                                </li>
+                            </ul>
                         </div>
-                        <div class="team-subtitle">
-                            Директор ООО «Программные решения»
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team-item">
+                            <div class="team-item-img">
+                                <img src="img/team/compressor/card-3-min.jpg" alt="">
+                            </div>
+                            <div class="team-title">
+                                Баранова Екатерина Сергеевна
+                            </div>
+                            <div class="team-subtitle">
+                                Ведущий программист отдела разработки и внедрения ООО «СОФТСОЛ»
+                            </div>
+                            <ul class="team-list">
+                                <li class="team-subtitle">
+                                    Преподаваемые дисциплины:
+                                </li>
+                                <li>
+                                    Разработка бизнес приложений 1С
+                                </li>
+                                <li>
+                                    Дополнительные механизмы платформы 1С
+                                </li>
+                                <li>
+                                    Адаптация тип-х конфигураций 1С
+                                </li>
+                                <li>
+                                    Решение оперативных задач в 1С
+                                </li>
+                            </ul>
                         </div>
-                        <ul class="team-list">
-                            <li class="team-subtitle">
-                                Преподаваемые дисциплины:
-                            </li>
-                            <li>
-                                Разработка приложений в среде Java
-                            </li>
-                            <li>
-                                Язык программирования Java
-                            </li>
-                            <li>
-                                Объектно-ориентированное программирование
-                            </li>
-                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team-item">
+                            <div class="team-item-img">
+                                <img src="img/team/compressor/card-4-min.jpg" alt="">
+                            </div>
+                            <div class="team-title">
+                                Рощин Сергей Михайлович
+                            </div>
+                            <div class="team-subtitle">
+                                Директор ООО «ИТ»
+                            </div>
+                            <ul class="team-list">
+                                <li class="team-subtitle">
+                                    Преподаваемые дисциплины:
+                                </li>
+                                <li>
+                                    Глубокое обучение и машинное зрение
+                                </li>
+                                <li>
+                                    Нейронные сети и контент-анализ
+                                </li>
+                                <li>
+                                    Методология управления программными проектами
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team-item">
+                            <div class="team-item-img">
+                                <img src="img/team/compressor/card-5-min.jpg" alt="">
+                            </div>
+                            <div class="team-title">
+                                Поленок Максим Викторович
+                            </div>
+                            <div class="team-subtitle">
+                                программист ООО «НООСОФТ»
+                            </div>
+                            <ul class="team-list">
+                                <li class="team-subtitle">
+                                    Преподаваемые дисциплины:
+                                </li>
+                                <li>
+                                    Алгоритмизация и программирование
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team-item">
+                            <div class="team-item-img">
+                                <img src="img/team/compressor/card-6-min.jpg" alt="">
+                            </div>
+                            <div class="team-title">
+                                Башмаков Алексей Геннадьевич
+                            </div>
+                            <div class="team-subtitle">
+                                Специалист АО «КОНСИСТ-ОС»
+                            </div>
+                            <ul class="team-list">
+                                <li class="team-subtitle">
+                                    Преподаваемые дисциплины:
+                                </li>
+                                <li>
+                                    Программирование микроконтроллеров
+                                </li>
+                                <li>
+                                    Инфокоммуникационные системы и сети
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team-item">
+                            <div class="team-item-img">
+                                <img src="img/team/card-7.jpg" alt="">
+                            </div>
+                            <div class="team-title">
+                                Бондаренко Сергей Владимирович
+                            </div>
+                            <div class="team-subtitle">
+                                Специалист АО «КОНСИСТ-ОС»
+                            </div>
+                            <ul class="team-list">
+                                <li class="team-subtitle">
+                                    Преподаваемые дисциплины:
+                                </li>
+                                <li>
+                                    Frontend-разработка
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team-item">
+                            <div class="team-item-img">
+                                <img src="img/team/card-8.jpg" alt="">
+                            </div>
+                            <div class="team-title">
+                                Врублевский Игорь Владимирович
+                            </div>
+                            <div class="team-subtitle">
+                                Начальник отдела информатизации ФГБОУ ВО «БГИТУ»
+                            </div>
+                            <ul class="team-list">
+                                <li class="team-subtitle">
+                                    Преподаваемые дисциплины:
+                                </li>
+                                <li>
+                                    Системное администрирование
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team-item">
+                            <div class="team-item-img">
+                                <img src="img/team/card-9.jpg" alt="">
+                            </div>
+                            <div class="team-title">
+                                Халаев Андрей Алексеевич
+                            </div>
+                            <div class="team-subtitle">
+                                Главный разработчик ООО «ГК Иннотех»
+                            </div>
+                            <ul class="team-list">
+                                <li class="team-subtitle">
+                                    Преподаваемые дисциплины:
+                                </li>
+                                <li>
+                                    Разработка приложений в среде Java
+                                </li>
+                                <li>
+                                    Язык программирования Java
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 col-lg-4">
-                    <div class="team-item">
-                        <div class="team-item-img">
-                            <img src="img/team/compressor/card-2-min.jpg" alt="">
-                        </div>
-                        <div class="team-title">
-                            Кондратенко Сергей Викторович
-                        </div>
-                        <div class="team-subtitle">
-                            Директор ООО «НООСОФТ»
-                        </div>
-                        <ul class="team-list">
-                            <li class="team-subtitle">
-                                Преподаваемые дисциплины:
-                            </li>
-                            <li>
-                                JavaScript-разработка
-                            </li>
-                        </ul>
+            </div>
+        </div>
+    </section>
+    <section id="press" data-scroll-section class="section dark">
+        <div class="container">
+            <div class="row gy-2">
+                <div class="col-lg-12">
+                    <div class="Title">
+                        О нас в прессе
                     </div>
                 </div>
-                <div class="col-6 col-lg-4">
-                    <div class="team-item">
-                        <div class="team-item-img">
-                            <img src="img/team/compressor/card-3-min.jpg" alt="">
+                <div class="col-lg-12">
+                    <div class="swiper mt-5 press-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="video">
+                                    <iframe src="https://vk.com/video_ext.php?oid=194731459&id=456239170&hash=1d13299225bfa2c1&hd=2"
+                                            width="853" height="480"
+                                            allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+                                            frameborder="0"
+                                            allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="video">
+                                    <iframe src="https://vk.com/video_ext.php?oid=194731459&id=456239170&hash=1d13299225bfa2c1&hd=2"
+                                            width="853" height="480"
+                                            allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+                                            frameborder="0"
+                                            allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="video">
+                                    <iframe src="https://vk.com/video_ext.php?oid=194731459&id=456239170&hash=1d13299225bfa2c1&hd=2"
+                                            width="853" height="480"
+                                            allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+                                            frameborder="0"
+                                            allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="video">
+                                    <iframe src="https://vk.com/video_ext.php?oid=194731459&id=456239170&hash=1d13299225bfa2c1&hd=2"
+                                            width="853" height="480"
+                                            allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+                                            frameborder="0"
+                                            allowfullscreen></iframe>
+                                </div>
+                            </div>
                         </div>
-                        <div class="team-title">
-                            Баранова Екатерина Сергеевна
-                        </div>
-                        <div class="team-subtitle">
-                            Ведущий программист отдела разработки и внедрения ООО «СОФТСОЛ»
-                        </div>
-                        <ul class="team-list">
-                            <li class="team-subtitle">
-                                Преподаваемые дисциплины:
-                            </li>
-                            <li>
-                                Разработка бизнес приложений 1С
-                            </li>
-                            <li>
-                                Дополнительные механизмы платформы 1С
-                            </li>
-                            <li>
-                                Адаптация тип-х конфигураций 1С
-                            </li>
-                            <li>
-                                Решение оперативных задач в 1С
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-4">
-                    <div class="team-item">
-                        <div class="team-item-img">
-                            <img src="img/team/compressor/card-4-min.jpg" alt="">
-                        </div>
-                        <div class="team-title">
-                            Рощин Сергей Михайлович
-                        </div>
-                        <div class="team-subtitle">
-                            Директор ООО «ИТ»
-                        </div>
-                        <ul class="team-list">
-                            <li class="team-subtitle">
-                                Преподаваемые дисциплины:
-                            </li>
-                            <li>
-                                Глубокое обучение и машинное зрение
-                            </li>
-                            <li>
-                                Нейронные сети и контент-анализ
-                            </li>
-                            <li>
-                                Методология управления программными проектами
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-4">
-                    <div class="team-item">
-                        <div class="team-item-img">
-                            <img src="img/team/compressor/card-5-min.jpg" alt="">
-                        </div>
-                        <div class="team-title">
-                            Поленок Максим Викторович
-                        </div>
-                        <div class="team-subtitle">
-                            программист ООО «НООСОФТ»
-                        </div>
-                        <ul class="team-list">
-                            <li class="team-subtitle">
-                                Преподаваемые дисциплины:
-                            </li>
-                            <li>
-                                Алгоритмизация и программирование
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-4">
-                    <div class="team-item">
-                        <div class="team-item-img">
-                            <img src="img/team/compressor/card-6-min.jpg" alt="">
-                        </div>
-                        <div class="team-title">
-                            Башмаков Алексей Геннадьевич
-                        </div>
-                        <div class="team-subtitle">
-                            Специалист АО «КОНСИСТ-ОС»
-                        </div>
-                        <ul class="team-list">
-                            <li class="team-subtitle">
-                                Преподаваемые дисциплины:
-                            </li>
-                            <li>
-                                Программирование микроконтроллеров
-                            </li>
-                            <li>
-                                Инфокоммуникационные системы и сети
-                            </li>
-                        </ul>
+                        <div class="press-button press-button-next"></div>
+                        <div class="press-button press-button-prev"></div>
                     </div>
                 </div>
             </div>
@@ -2050,7 +2567,7 @@
                     </div>
                 </div>
                 <div class="col-lg-8">
-                    <div data-scroll-direction="horizontal" data-scroll data-scroll-speed="0.5" class="video">
+                    <div class="video">
                         <iframe src="https://vk.com/video_ext.php?oid=194731459&id=456239170&hash=1d13299225bfa2c1&hd=2"
                                 width="853" height="480"
                                 allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0"
@@ -2072,8 +2589,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 order-first order-lg-last">
-                    <div data-scroll data-scroll-sticky data-scroll-target="#video2"
-                         class="Title align-right mb-5 mb-lg-0">
+                    <div class="Title align-right mb-5 mb-lg-0">
                         IT-research
                     </div>
                 </div>
@@ -2095,17 +2611,17 @@
                         <ul class="List">
                             <li>
                                 <div class="Text">
-                                    студентам, успевающим на "хорошо" - 2300 руб.
+                                    студентам, успевающим на "хорошо" - 2430 руб.
                                 </div>
                             </li>
                             <li>
                                 <div class="Text">
-                                    студентам, успевающим на «хорошо» и «отлично» - 4130 руб.
+                                    студентам, успевающим на «хорошо» и «отлично» - 4374 руб.
                                 </div>
                             </li>
                             <li>
                                 <div class="Text">
-                                    студентам, успевающим на «отлично» - 5750 руб.
+                                    студентам, успевающим на «отлично» - 6075 руб.
                                 </div>
                             </li>
                         </ul>
@@ -2119,7 +2635,7 @@
                         <ul class="List">
                             <li>
                                 <div class="Text">
-                                    студентам, имеющим право на получение государственной социальной стипендии - 3450
+                                    студентам, имеющим право на получение государственной социальной стипендии - 3650
                                     руб.
                                 </div>
                             </li>
@@ -2134,7 +2650,7 @@
                         <ul class="List">
                             <li>
                                 <div class="Text">
-                                    9550 руб.
+                                    10080 руб.
                                 </div>
                             </li>
                         </ul>
@@ -2460,7 +2976,9 @@
                             Если абитуриент не проходит на бюджетное обучение, то можно учиться платно. Зачисление на
                             платное обучение осуществляется до 14 августа 2023 года.
                             Подробную информацию о количестве бюджетных мест на направления подготовки IT, o списке
-                            документов для поступления, стоимости обучения и др. можно узнать на сайте <a target="_blank" href="http://bgitu.ru/abitur/bachelor/">БГИТУ</a> или в приемной комиссии
+                            документов для поступления, стоимости обучения и др. можно узнать на сайте <a
+                                target="_blank" href="http://bgitu.ru/abitur/bachelor/">БГИТУ</a> или в приемной
+                            комиссии
                             университета.
                             <br/>
                             Выпускник 11 класса может поступить на обучение по специальности 09.02.07 "Информационные
@@ -2653,6 +3171,7 @@
 
 <script src="js/fancybox.umd.js"></script>
 <script src="js/locomotive-scroll.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/home.js"></script>
 
 <style>

@@ -44,7 +44,7 @@
 
     &-item {
       &-img {
-        height: calc(var(--index) * 20);
+        aspect-ratio: 1/1;
       }
     }
 

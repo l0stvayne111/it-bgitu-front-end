@@ -1,0 +1,15 @@
+.event-section {
+  position: relative;
+}
+
+.event-slider {
+  overflow: inherit !important;
+  &-slide {
+
+  }
+  &-item {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+  }
+}
