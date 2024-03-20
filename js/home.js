@@ -159,17 +159,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
 
     new Swiper('.team-slider', {
-        slidesPerView: 2.6,
-        spaceBetween: 30,
         breakpoints: {
-            // when window width is >= 320px
             320: {
                 slidesPerView: 1.1,
                 spaceBetween: 12
             },
             // when window width is >= 480px
             480: {
-                slidesPerView: 2.6,
+                slidesPerView: 2.5,
                 spaceBetween: 30
             },
         }

@@ -19,12 +19,12 @@
   &-title {
     color: var(--black);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   &-subtitle {
     color: var(--secondary);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
   }
 
@@ -32,7 +32,7 @@
     margin-top: .75rem;
     list-style: none;
     color: var(--black);
-    font-size: 12px;
+    font-size: 14px;
     font-style: italic;
   }
 }
@@ -49,15 +49,15 @@
     }
 
     &-title {
-      font-size: calc(var(--index) * .9);
+      font-size: calc(var(--index) * 1.2);
     }
 
     &-subtitle {
-      font-size: calc(var(--index) * .85);
+      font-size: calc(var(--index) * 1);
     }
 
     &-list {
-      font-size: calc(var(--index) * .7);
+      font-size: calc(var(--index) * 1.1);
     }
   }
 
